@@ -1,13 +1,12 @@
 /backup/config/backup_src.txt
 /home/andre/git/*
 /etc/netplan/*
-/etc/rsyslog.d/60-graylog.conf
-/etc/apt/apt.conf.d/999_decompress_rpi_kernel
-/boot/auto_decompress_kernel
 /etc/lighttpd/external.conf
+/etc/lighttpd/lighttpd.conf
 /etc/ntp.conf 
 /home/andre/pihole/*
 /home/andre/sites/*
+/home/andre/history
 /etc/crontab 
 /etc/nginx/sites-available/*
 /etc/ddclient.conf
