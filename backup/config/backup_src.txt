@@ -15,4 +15,4 @@
 /etc/systemd/system/cloudfla*
 /etc/cloudflared/*
 /etc/apt/sources.list.d/*
-
+/root/update_cert.sh
