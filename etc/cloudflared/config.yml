@@ -1,0 +1,4 @@
+url: http://10.0.10.10:8123 
+tunnel: dba2bdf0-59e0-4606-a744-9e7669b18f85
+credentials-file: /etc/cloudflared/dba2bdf0-59e0-4606-a744-9e7669b18f85.json
+logfile: /var/log/cloudflared.log
