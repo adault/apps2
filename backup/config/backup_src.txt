@@ -1,6 +1,6 @@
 /backup/config/backup_src.txt
 /home/andre/git/*
-/etc/netplan/01-netcfg.yaml
+/etc/netplan/*
 /etc/rsyslog.d/60-graylog.conf
 /etc/apt/apt.conf.d/999_decompress_rpi_kernel
 /boot/auto_decompress_kernel
