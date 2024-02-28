@@ -6,7 +6,7 @@
 /etc/ntp.conf 
 /home/andre/pihole/*
 /home/andre/sites/*
-/home/andre/history
+/home/andre/history.txt
 /etc/crontab 
 /etc/nginx/sites-available/*
 /etc/ddclient.conf
