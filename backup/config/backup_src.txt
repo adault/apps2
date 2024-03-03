@@ -9,7 +9,6 @@
 /home/andre/history.txt
 /etc/crontab 
 /etc/nginx/sites-available/*
-/etc/ddclient.conf
 /home/andre/installedsoftware.apt-clone.tar.gz
 /etc/systemd/system/dnshttps.service
 /etc/systemd/system/cloudfla*
