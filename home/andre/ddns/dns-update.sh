@@ -1,10 +1,7 @@
 #!/bin/bash
-
 # Set to run hourly in cron.
 #	ln -s /home/username/scripts/dns-update.sh /etc/cron.hourly/dns-update
 # Deleting the cache file will cause script to update CloudFlare even if public ip has not changed.
-
-
 ## SETTINGS
 email=
 # Address for errors and confirmations (leave empty to disable mail)
@@ -18,9 +15,6 @@ api_token='Pw5mzwGVHMePsHkHiKwUmlQHj7rwAe6Kdns_hSsF'
 # Click "Get your API token" from Overview page (Token Name: Edit zone DNS)
 domains=( andre.dault.ca )
 # Space separated array of Type A Domain Records to update
-
-
-
 
 ## PREFLIGHT CHECK
 preflight_check() {
@@ -39,9 +33,6 @@ preflight_check() {
 	fi
 }
 
-
-
-
 ## NOTIFICATIONS
 message() {
 	body="$1"
@@ -58,9 +49,6 @@ message() {
 	fi
 }
 
-
-
-
 ## GET PUBLIC IP
 get_public_ip() {
 	# Try with cloudflare nameserver
@@ -76,9 +64,6 @@ get_public_ip() {
 		message "ERROR - Unable to get public ip address with cloudflare, opendns, or google resolvers." "error get_public_ip"
 	fi
 }
-
-
-
 
 ## GET DNS RECORDS LIST:
 get_dns_record() {
@@ -114,9 +99,6 @@ get_dns_record() {
 	fi
 }
 
-
-
-
 ## PATCH DNS RECORD:
 update_dns_record() {
 	local http_rc
@@ -150,9 +132,6 @@ update_dns_record() {
 	fi
 }
 
-
-
-
 ## UPDATE SCRIPT CACHE:
 update_cache() {
 	cat <<- EOF > "$cachedir/${1}"
@@ -165,9 +144,6 @@ update_cache() {
 
 	chmod 0600 "$cachedir/${1}"
 }
-
-
-
 
 ## MAIN CODE
 preflight_check
